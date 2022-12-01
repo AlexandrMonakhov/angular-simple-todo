@@ -1,0 +1,10 @@
+<div class="modal">
+	<div
+		class="modal__overlay"
+		(click)="clickOverlay.emit()"
+	></div>
+
+	<div class="modal__content">
+		<ng-content></ng-content>
+	</div>
+</div>

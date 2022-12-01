@@ -1,0 +1,25 @@
+@import '../../../../../styles/vars.scss';
+
+.post {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	background-color: rgba($color_black, .12);
+	border-radius: 8px;
+	transition: all $transition-speed $transition-animation;
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgba($color_black, .48);
+		color: $color_white;
+	}
+
+	&__action {
+		display: flex;
+		align-items: center;
+	}
+
+	&__edit {
+		margin-right: 16px;
+	}
+}

@@ -1,0 +1,38 @@
+@import '../../../../styles/vars.scss';
+
+.my-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $color_black;
+	color: $color_white;
+	min-width: 44px;
+	padding: 8px 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 8px;
+	cursor: pointer;
+	border: none;
+	transition: all $transition-speed $transition-animation;
+
+	&:hover {
+		background-color: rgba($color_black, .64);
+	}
+
+	&:active {
+		background-color: rgba($color_black, .80);
+	}
+
+	&_icon-only {
+		padding: 4px;
+		background-color: $color_white;
+
+		&:hover {
+			background-color: rgba($color_white, .64);
+		}
+
+		&:active {
+			background-color: rgba($color_white, .80);
+		}
+	}
+}

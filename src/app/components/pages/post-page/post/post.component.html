@@ -1,0 +1,31 @@
+<div class="post">
+	<div class="post__content">
+		<div class="post__title">
+			<h2>{{ post.title }}</h2>
+		</div>
+
+		<div class="post__text">
+			<p>{{ post.text }}</p>
+		</div>
+	</div>
+
+	<div class="post__action">
+		<div class="post__edit">
+			<my-button
+				[iconOnly]="true"
+				(click)="clickEditButton.emit(post)"
+			>
+				<img src="assets/icons/edit.svg" alt="Редактировать пост" />
+			</my-button>
+		</div>
+
+		<div class="post__delete">
+			<my-button
+				[iconOnly]="true"
+				(click)="clickDeleteButton.emit(post)"
+			>
+				<img src="assets/icons/delete.svg" alt="Удалить пост" />
+			</my-button>
+		</div>
+	</div>
+</div>

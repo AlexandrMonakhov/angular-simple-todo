@@ -1,0 +1,15 @@
+<div class="my-input">
+	<label
+		class="my-input__label"
+	>
+		{{ label }}
+
+		<input
+			class="my-input__input"
+			type="text"
+			[placeholder]="label"
+			[(ngModel)]="value"
+			(ngModelChange)="valueChange.emit(value)"
+		/>
+	</label>
+</div>

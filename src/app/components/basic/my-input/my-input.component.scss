@@ -1,0 +1,16 @@
+@import '../../../../styles/vars.scss';
+
+.my-input {
+	&__label {
+		display: block;
+		margin-bottom: 4px;
+	}
+
+	&__input {
+		padding: 10px;
+		border-radius: 8px;
+		border: none;
+		border: 1px solid rgba($color_black, .48);
+		width: 100%;
+	}
+}

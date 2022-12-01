@@ -1,0 +1,22 @@
+@import '../../../../../styles/vars.scss';
+
+.post-empty {
+	text-align: center;
+	padding: 60px;
+	background-color: rgba($color_black, .08);
+	border-radius: 8px;
+
+	&__icon {
+		margin-bottom: 16px;
+
+		span {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		p {
+			font-size: 32px;
+		}
+	}
+}

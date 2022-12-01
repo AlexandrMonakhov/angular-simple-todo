@@ -1,0 +1,23 @@
+<div class="post-form">
+	<div class="post-form__input">
+		<my-input
+			[(value)]="title"
+			label="Title"
+		></my-input>
+	</div>
+
+	<div class="post-form__input">
+		<my-input
+			[(value)]="text"
+			label="Text"
+		></my-input>
+	</div>
+
+	<div class="post-form__button">
+		<my-button
+			(click)="onClickButton()"
+		>
+			Добавить пост
+		</my-button>
+	</div>
+</div>

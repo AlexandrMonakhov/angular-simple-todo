@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.scheme {
+	max-width: 1200px;
+	margin: 0 auto;
+}

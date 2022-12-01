@@ -1,0 +1,27 @@
+<div class="post-edit">
+	<div class="post-edit__title">
+		<h2>Изменение поста</h2>
+	</div>
+
+	<div class="post-edit__input">
+		<my-input
+			label="Edited title"
+			[(value)]="copyCurrentPost.title"
+		></my-input>
+	</div>
+	<div class="post-edit__input">
+		<my-input
+			label="Edited text"
+			[(value)]="copyCurrentPost.text"
+		></my-input>
+	</div>
+
+	<div class="post-edit__action">
+		<div class="post-edit__save">
+			<my-button (click)="onClickSaveButton(copyCurrentPost)">Сохранить</my-button>
+		</div>
+		<div class="post-edit__cancel">
+			<my-button (click)="onClickCancelButton()">Отменить</my-button>
+		</div>
+	</div>
+</div>

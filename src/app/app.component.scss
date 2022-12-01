@@ -1,0 +1,12 @@
+.app {
+	&__post-form {
+		padding-top: 32px;
+		margin-bottom: 32px;
+	}
+
+	&__post {
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+}
